@@ -1,9 +1,14 @@
 import './App.css';
-import hello from './hello';
+import Hello from './components/hello';
+import Header from './components/header';
 
 function App() {
   return (
-    hello
+    <div>
+      <Header></Header>
+      <Hello></Hello>
+    </div>
+    
   );
 }
 
