@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './components/login';
 import Signup from './components/signup';
+import Landingpage from './components/landingpage';
 
 function App() {
   // const [name, setName] = useState('Swatantra')
@@ -53,8 +54,9 @@ function App() {
     // </div>
 
     <Routes>
-      <Route path= '/'  element = {<Signup/>} />
+      <Route path= '/'  element = {<Landingpage/>} />
       <Route path= '/login'  element = {<Login/>} />
+      <Route path= '/register'  element = {<Signup/>} />
     </Routes>
 
   );

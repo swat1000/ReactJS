@@ -23,7 +23,7 @@ export default function login() {
                                         <input type="password" class="form-control" id="password" placeholder="Enter password" />
                                     </div>
                                     <button type="submit" class="btn btn-primary">Login</button>
-                                    <p class="mt-3">Don't have an account? <Link to='/' >Sign up</Link></p>
+                                    <p class="mt-3">Don't have an account? <Link to='/register' >Sign up</Link></p>
                                 </form>
                             </div>
                         </div>
