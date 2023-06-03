@@ -7,7 +7,7 @@ export default function Contactus(props){
         Name: {props.name}<br></br>
         Phone No.: {props.phone}<br></br>
         Email: {props.email}<br></br>
-{/* We can link the child into the parent element */}
+{/* We can link the child into the parent element but not the vice versa */}
         <Hello></Hello>
        </div>
     )
