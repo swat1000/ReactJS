@@ -6,6 +6,7 @@ import { useState } from 'react';
 function App() {
   const [name, setName]=useState('Swatantra')
   // const [Incnum, setNum]=useState(0)
+  const [showtitlepage, setshowtitlepage] = useState(true)
 
   // const contactDetails = {
   //   name: 'Swatantra',
@@ -32,8 +33,9 @@ function App() {
   
   return (
     <div>
-      <Header name={name} setName={setName}></Header>
-      <Contactus name={name}></Contactus>
+      <Header name={name} setName={setName} showtitlepage={showtitlepage} setshowtitlepage={setshowtitlepage}></Header>
+      
+      {/* <Contactus name={name}></Contactus> */}
       {/* My Name is {name}
       <button onClick={handleClick}>Click me</button> */}
       {/* <button onClick={RevertClick}>Revert me</button> */}
