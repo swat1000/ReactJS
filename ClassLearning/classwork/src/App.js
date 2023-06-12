@@ -7,6 +7,11 @@ import Login from './components/login';
 import Signup from './components/signup';
 import Landingpage from './components/landingpage';
 import Mainpage from './components/Mainpage';
+import Profile from './components/Profile';
+import Allcontext from './context/Allcontext';
+
+
+
 
 function App() {
   // const [name, setName] = useState('Swatantra')
@@ -35,6 +40,15 @@ function App() {
   //   setNum(Incnum-1)
   // }
 
+  const contactDetails = {
+    name: 'Swatantra',
+    phone: '439483494',
+    email: 'xyz@gmail.com'
+
+  }
+
+  const [global, setGlobal] = useState('Global')
+
 
   return (
     // <div>
@@ -54,11 +68,21 @@ function App() {
     //   </Contactus> */}
     // </div>
 
-    <Routes>
-      <Route path= '/'  element = {<Mainpage/>} />
-      <Route path= '/login'  element = {<Login/>} />
-      <Route path= '/register'  element = {<Signup/>} />
-    </Routes>
+    // <Routes>
+    //   <Route path= '/'  element = {<Mainpage/>} />
+    //   <Route path= '/login'  element = {<Login/>} />
+    //   <Route path= '/register'  element = {<Signup/>} />
+    // </Routes>
+    <div>
+      <All.Provider>
+      <Header></Header>
+      <Contactus>
+        
+      </Contactus>
+       Details coming from profile
+      <Profile></Profile>
+      </All.Provider>
+    </div>
 
   );
 }
